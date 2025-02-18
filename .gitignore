@@ -1,0 +1,65 @@
+# Ignore all .pyc, .pyo, .pyCACHE files
+*.py[cod]
+__pycache__/
+*.egg-info/
+
+# Ignore generated files
+*.log
+
+# Ignore temporary build directories
+build/
+
+# Ignore virtual environment directory (venv or .venv)
+venv/
+.venv/
+
+# Ignore IDE-specific files and settings
+.idea/
+.vscode/
+pytest_cache/
+
+# Ignore Docker-related files
+#.Dockerignore
+#docker-compose.yml
+#dockerfile
+DDD_dockerfile
+
+# Ignore specific Python modules
+dist/
+*.egg-info/
+__pycache__/
+*.log
+*.zip
+*.tar.gz
+
+# Ignore environment variables
+.env
+
+# Ignore tests and test results
+tests/
+test_output.txt
+
+# Ignore notebooks (if you have Jupyter Notebooks)
+.ipynb_checkpoints/
+
+# Ignore large binary files
+*.db
+*.sqlite3
+
+# Ignore any build or cache artifacts from CI/CD tools
+.cibuildwheel/
+pytest_cache/
+tox.ini
+.tox/
+
+# Ignore IDE settings and caches
+.idea/
+.vscode/
+
+# Ignore temporary files created by editors
+*~
+*.swp
+*.swo
+
+#Ignore Dokufolder
+docu/
