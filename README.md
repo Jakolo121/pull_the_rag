@@ -36,23 +36,27 @@ A production-ready Retrieval-Augmented Generation (RAG) pipeline implementation 
 ### Local Development
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/rag-pipeline.git
 cd rag-pipeline
 ```
 
 2. Create and activate a virtual environment:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 4. Create a `.env` file:
+
 ```env
 OPENAI_API_KEY=your_openai_api_key
 PINECONE_API_KEY=your_pinecone_api_key
@@ -63,11 +67,13 @@ LANGSMITH_API_KEY=your_langsmith_api_key
 ### Docker Deployment
 
 1. Build the Docker image:
+
 ```bash
 docker build -t rag-pipeline .
 ```
 
 2. Run the container:
+
 ```bash
 docker run -p 8000:8000 --env-file .env rag-pipeline
 ```
@@ -77,13 +83,17 @@ docker run -p 8000:8000 --env-file .env rag-pipeline
 ### Endpoints
 
 #### POST /upload/
+
 Upload and process a PDF document.
+
 ```bash
 curl -X POST -F "file=@/path/to/your/document.pdf" http://localhost:8000/upload/
 ```
 
 #### POST /query/
+
 Query the RAG pipeline with a question.
+
 ```bash
 curl -X POST -H "Content-Type: application/json" \
      -d '{"question": "Your question here", "index_name": "your_index_name"}' \
@@ -91,7 +101,9 @@ curl -X POST -H "Content-Type: application/json" \
 ```
 
 #### GET /health/
+
 Check the API health status.
+
 ```bash
 curl http://localhost:8000/health/
 ```
@@ -121,12 +133,14 @@ rag-pipeline/
 ### Cloud Deployment Options
 
 #### Google Cloud Run
+
 ```bash
 gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/rag-pipeline
 gcloud run deploy rag-pipeline --image gcr.io/YOUR_PROJECT_ID/rag-pipeline
 ```
 
 #### AWS ECS
+
 ```bash
 aws ecr get-login-password --region YOUR_REGION | docker login --username AWS --password-stdin
 docker tag rag-pipeline:latest YOUR_ACCOUNT_ID.dkr.ecr.YOUR_REGION.amazonaws.com/rag-pipeline
@@ -139,6 +153,7 @@ docker push YOUR_ACCOUNT_ID.dkr.ecr.YOUR_REGION.amazonaws.com/rag-pipeline
 - Implements async/await for better concurrency
 - Employs efficient chunking strategies
 - Utilizes serverless vector storage
+  - 👷🏻‍♀️[Serverless mit Quadrant](https://qdrant.tech/articles/serverless/)
 
 ## 🤝 Contributing
 
