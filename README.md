@@ -169,7 +169,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Isabella Reichardt (@reichardtit)
+- Isabell Lorenzo-Reichardt (@Jakolo121)
 
 ## 🙏 Acknowledgments
 
