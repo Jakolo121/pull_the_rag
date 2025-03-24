@@ -38,8 +38,8 @@ A production-ready Retrieval-Augmented Generation (RAG) pipeline implementation 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/rag-pipeline.git
-cd rag-pipeline
+git clone https://github.com/Jakolo121/pull_the_rag.git
+cd pull_the_rag
 ```
 
 2. Create and activate a virtual environment:
