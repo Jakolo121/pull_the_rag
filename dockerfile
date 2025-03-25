@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.title="Pull The Rag" \
     org.opencontainers.image.description="RAG application for document processing" \
     org.opencontainers.image.version="1.0.0" \
     com.docker.desktop.extension.name="Pull The Rag" \
-    maintainer="Developer"
+    maintainer="i22y"
 
 # Set working directory
 WORKDIR /app
