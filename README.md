@@ -165,7 +165,7 @@ docker push YOUR_ACCOUNT_ID.dkr.ecr.YOUR_REGION.amazonaws.com/rag-pipeline
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the fair Code License - see the LICENSE file for details.
 
 ## 👥 Authors
 
